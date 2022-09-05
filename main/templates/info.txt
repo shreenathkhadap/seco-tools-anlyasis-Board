@@ -1,0 +1,24 @@
+in template of main admin there is four quantity
+
+and thir name or fetch id in views is 
+
+for current 
+
+
+1.Target COPQ :- tcopq     
+current COPQ :-  ccopq  this used to fetch from database and send to html page  
+new COPQ :-  newcopq   
+
+
+2.Target Process Rejection :- tpr    
+current Process Rejection :-  cpr  this used to fetch from database and send to html page  
+new Process Rejection :-  newpr   
+
+3.Target  Hold MO :- tmo     
+current  Hold MO :-  cmo  this used to fetch from database and send to html page  
+new  Hold MO :-  newmo   
+
+4.Target Yeild :- tYeild   
+current Yeild :-  cYeild  this used to fetch from database and send to html page  
+new Yeild :-  newYeild   
+

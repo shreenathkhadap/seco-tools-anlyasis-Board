@@ -1,0 +1,17 @@
+{% load static%}
+<!DOCTYPE html>
+{%if msg%}
+    <script>
+        window.alert('{{msg}}');
+    </script>
+    {% endif %}
+<html>
+    <head>
+        <img src= {% static 'logo.jpg'%}>
+        <title> Seco Home</title>
+        this is home pagfe
+        <img src= {% static 'logo.jpg'%}>
+        
+
+    </body>
+</html>

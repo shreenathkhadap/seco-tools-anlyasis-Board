@@ -1,0 +1,118 @@
+{% load static%}
+<!DOCTYPE html>
+{%if msg%}
+    <script>
+        window.alert('{{msg}}');
+    </script>
+    {% endif %}
+<html>
+    <head>
+        
+        <title> Seco Admin</title>
+        <img src= {% static 'logo.jpg'%} width="200" height="50" style="float:left" margin-top:20%;>
+        <br>
+        <br>
+        <br>
+        <form class="d-flex" action="/getdata/" method="POST">
+            {% csrf_token %}
+            
+    
+    <h1 class="text-center py-4">Data Management</h1>
+
+    <section class="container-fluid">
+        
+        <section class="row  justify-content-center">
+            
+            <section class="col-12 col-lg-6 col-md-3"   >
+                <form class="form-container py-5 px-5">
+                    <div class="form-group py-3">
+                        
+                    <div class="form-group py-3">
+                        <label for="exampleInputEmail1"> Target COPQ :- {{oldcopq}} </label>
+                        <input type="number" name="tcopq" placeholder="New Target" onchange="setTwoNumberDecimal"  />
+                        <br>
+                        <label for="exampleInputEmail1"> current COPQ :- {{oldcopq}} </label>
+                        <br>
+                        
+                        <label for="exampleInputEmail1"> COPQ :- </label>
+                        
+                        <input type="number" name="newcopq" placeholder="COPQ" onchange="setTwoNumberDecimal"  />
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    
+                    
+                    <div class="form-group py-3">
+                        <label for="exampleInputEmail1"> Target Process Rejection :- {{oldcopq}} </label>
+                        <input type="number" name="tpr" placeholder="New Target" onchange="setTwoNumberDecimal"  />
+                        <br>
+                        <label for="exampleInputEmail1"> current Process Rejection :- {{oldcopq}} </label>
+                        <br>
+                        <label for="exampleInputEmail1">Process Rejection</label>
+                        
+                        <input type="number" name="newpr" placeholder="Process Rejection" onchange="setTwoNumberDecimal"  />
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    
+                    
+                    <div class="form-group py-3">
+                        <label for="exampleInputEmail1"> Target Hold MO :- {{oldcopq}} </label>
+                        <input type="number" name="tmo" placeholder="New Target" onchange="setTwoNumberDecimal"  />
+                        <br>
+                        <label for="exampleInputEmail1"> current Hold MO :- {{oldcopq}} </label>
+                        <br>
+                        <label for="exampleInputEmail1"> No. of Hold MO</label>
+                        
+                        <input type="number" name="newmo" placeholder=" No. of Hold MO" onchange="setTwoNumberDecimal"  />
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    
+                    
+                    {% comment %} <div class="form-group py-3">
+                        <label for="exampleInputEmail1"> Target COPQ :- {{oldcopq}} </label>
+                        <input type="number" name="tcopq" placeholder="COPQ" onchange="setTwoNumberDecimal"  />
+                        <br>
+                        <label for="exampleInputEmail1"> current Reasons :- {{oldcopq}} </label>
+                        <br>
+                        <label for="exampleInputEmail1"> Reasons :-</label>
+                        
+                        <input type="number" name="first" placeholder="Reasons" onchange="setTwoNumberDecimal"  />
+                    </div> {% endcomment %}
+                    {% comment %} <br>
+                    <br>
+                    <br> {% endcomment %}
+                    
+                    
+                    <div class="form-group py-3">
+                        <label for="exampleInputEmail1"> Target Yeild :- {{oldcopq}} </label>
+                        <input type="number" name="tyeild" placeholder="New Target" onchange="setTwoNumberDecimal"  />
+                        <br>
+                        <label for="exampleInputEmail1"> current Yeild :- {{oldcopq}} </label>
+                        <br>
+                        <label for="exampleInputEmail1"> Yeild </label>
+                        
+                        <input type="number" name="newyeild" placeholder="Yeild" onchange="setTwoNumberDecimal"  />
+                    </div>
+                   
+                   
+                    <br>
+                    
+        
+                   
+                   
+                    <button type="submit" class="btn btn-primary btn-block ">Submit</button>
+                    <button type="button" class="btn btn-danger mx-5 my-5 btn-lg mb-5"><a style="text-decoration: none; color: black;" href="/">Home</a></button>
+                  </form>
+        
+
+        {% comment %} <input type="number" onchange="setTwoNumberDecimal" min="0" max="10" step="0.25" value="0.00" /> {% endcomment %}
+        
+        
+
+    </body>
+</html>

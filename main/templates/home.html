@@ -1,0 +1,142 @@
+{% load static%}
+{%if msg%}
+    <script>
+        window.alert('{{msg}}');
+    </script>
+    {% endif %}
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+
+
+    <title>SECO</title>
+
+    <style>
+        
+        {% comment %} div  {text-align: center;} {% endcomment %}
+    </style>
+    <style>
+        .vertical {
+            border-left: 3px solid black;
+            height: 350px;
+            margin-left: -60px;
+            margin-right: 75px;
+            margin-top: -355px;
+        }
+        img {
+            border: 2px solid #ddd;
+            margin-left: 0px;
+            border-radius: 10px;
+            margin-top: -1px;
+            padding: 13px;
+            width: 150px;
+        }
+        .info {
+            color: dodgerblue;
+            
+            
+        }
+        
+        .info:hover {
+            background: #2196F3;
+            color: white;
+             
+            
+        }
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div style="border: 1px solid black; width: 98.7%; height: 80px;text-align: center;">
+        <img src= {% static 'logo.jpg'%} width="200" height="50" style="float:left" margin-top:20%;>
+        <p class="button">
+        <button type="button" style="position: absolute; right: 3%;  margin-top: 10px; class="btn btn-primary my-5 btn-lg mb-5"> <a href="/main_admin" >Admin</a></button>
+        </p>
+    </div>
+
+    <div style="border: 0px solid black; width: 90%; height: 60px; margin-top: 10px; margin-left: 5%;text-align: center;"><h1>Quality Update</h1></div>
+    <div style="border: 1px solid black; width: 90%; height: 400px; margin-top: 10px; margin-left: 5%; float: left;text-align: left;font-family: Courier New;">
+    
+    
+        <h1 style="color:red;">Performance as on</h1>
+        <h1>COPQ</h1>
+        <h1>Process Rejection</h1>
+        <h1>No. of Hold MO</h1>
+        <h1>Reasons</h1>
+        <h1> Yeild</h1>
+        
+    <div style="border: 0px solid black; width: 3%; height: 400px; margin-top: -410px; margin-left: 28%; float: left;text-align: left;font-family: sans-serif;">
+        <br>
+        <br>
+        <h1>:- </h1>
+        <h1>:- </h1>
+        <h1> :- </h1>
+        <h1>:- </h1>
+        <h1> :- </h1>
+        <h1>:- </h1>
+        
+    </div>    
+    <div style="border: 0px solid black; width: 10%; height: 400px; margin-top: -405px; margin-left: 35%; float: left;text-align: left;font-family: Courier New;">
+        <br>
+        <br>
+        <h1 style="color:red;">{{format_date}} </h1>
+        <h1>00</h1>
+        <h1> 00 </h1>
+        <h1>00 </h1>
+        <h1>...</h1>
+        <h1>00 </h1>
+        
+    </div>    
+    <div style="border: 0px solid black; width: 10%; height: 400px; margin-top: -405px; margin-left: 53%; float: left;text-align: left;font-family: Courier New;">
+        <br>
+        <br>
+        <h1 style="color:red;"></h1><br><br>
+        <h1>INR</h1>
+        <h1>NOS </h1>
+        <h1>NOS</h1>
+        <h1>...</h1>
+        <h1>%</h1>
+    </div>    
+    <div style="border: 0px solid black; width: 10%; height: 400px; margin-top: -405px; margin-left: 65%; float: left;text-align: left;font-family: Courier New;">
+        <br>
+        <br>
+        <h1 style="color:red;">Target</h1>
+        <h1>00</h1>
+        <h1> 00 </h1>
+        <h1>00 </h1>
+        <h1>...</h1>
+        <h1>00 </h1>
+        <div class= "vertical"></div>
+    </div>    
+    <div style="border: 0px solid black; width: 10%; height: 400px; margin-top: -405px; margin-left: 93%; float: left;text-align: left; font-family: Courier New;">
+        <br>
+        <br>
+        <h1 style="color:red;"></h1><br><br>
+        <h1>INR</h1>
+        <h1>NOS </h1>
+        <h1>NOS </h1>
+        <h1> ... </h1>
+        <h1>% </h1>
+    </div> 
+    
+        
+        {% comment %} <div style="border: 2px solid black; width: 20%; height: 350px; margin-top: -360px; margin-left: 50%; float: left;text-align: center;">
+        value <br>
+        {{222222}}
+        </div>
+    </div>
+    
+    <div style="border: 1px solid black; width: 45%; height: 350px; margin-top: 10px; margin-left: 40%;left;text-align: center;"><h1>
+        <h1>Target</h1>   
+    </h1></div>
+    </div>
+    <div style="border: 1px solid black; width: 98.7%; height: 80px; margin-top: 500px;"><h1>3</h1></div> {% endcomment %}
+ 
+</body>
+</html>
